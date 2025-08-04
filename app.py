@@ -9,7 +9,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 # ✅ Use specific frontend origin for CORS (update your domain here)
-CORS(app, resources={r"/api/*": {"origins": "https://younote-app.vercel.app/"}})
+CORS(app, resources={r"/api/*": {"origins": "https://younote-app.vercel.app"}})
 
 @app.route('/api/subtitles', methods=['GET'])
 def get_subtitles():
